@@ -43,6 +43,7 @@ body{
   margin:0;
 }
 h1.display{font-size:clamp(2.1rem,5.4vw,4.2rem)}
+.console{color:var(--cold)}
 h2.display{font-size:clamp(1.5rem,3.1vw,2.35rem)}
 h3{
   font-family:Archivo,sans-serif;
@@ -308,9 +309,9 @@ footer{border-top:1px solid var(--ink);padding:44px 0 60px;margin-top:20px}
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Autonomous multi-sensor field platform</p>
-        <h1 class="display">One platform.<br>Swap the mission,<br>not the machine.</h1>
+        <h1 class="display"><span class="console">One console.</span><br>Swap the mission,<br>not the machine.</h1>
         <p class="lede">MOASAS is a field instrument that carries optical, thermal, acoustic, environmental, and positional sensors on a single compute core — with an on-board AI layer that reads its own instruments and reports what it finds, in plain language, without a person watching the feed.</p>
-        <p class="lede">Designed and built from scratch by one person, starting October 2024 with no prior hardware background. It is currently running unattended at a remote residential site over cellular and mesh VPN.</p>
+        <p class="lede">Designed and built from scratch by one person, starting October 2024. It is currently running unattended at a remote residential site over cellular and mesh VPN.</p>
         <div class="cta-row">
           <a class="btn" href="#hardware">See the hardware</a>
           <a class="btn ghost" href="#record">Field record</a>
@@ -603,7 +604,7 @@ footer{border-top:1px solid var(--ink);padding:44px 0 60px;margin-top:20px}
       <h2 class="display">It runs when nobody is looking</h2>
     </div>
     <div class="metrics">
-      <div class="metric"><span class="v">Oct&nbsp;2024</span><span class="k">first sensor on a bench,<br>no hardware experience</span></div>
+      <div class="metric"><span class="v">Oct&nbsp;2024</span><span class="k">first sensor on the bench,<br>single-sensor prototype</span></div>
       <div class="metric"><span class="v">1,115</span><span class="k">environmental readings in one<br>day, answerable by prompt</span></div>
       <div class="metric"><span class="v">50&nbsp;GB</span><span class="k">rolling capture cap with<br>nightly off-site offload</span></div>
       <div class="metric"><span class="v">2</span><span class="k">units — one deployed,<br>one on the bench</span></div>
@@ -621,7 +622,7 @@ footer{border-top:1px solid var(--ink);padding:44px 0 60px;margin-top:20px}
       <h2 class="display">How it got here</h2>
     </div>
     <div class="log">
-      <div class="entry"><div class="when">Oct 2024</div><div class="what"><b>Started.</b> First sensor on a bench, no prior hardware or embedded background.</div></div>
+      <div class="entry"><div class="when">Oct 2024</div><div class="what"><b>Started.</b> First sensor on the bench — a single-sensor prototype on a desk.</div></div>
       <div class="entry"><div class="when">2025</div><div class="what"><b>Desktop era.</b> Sixty-four iterations of a local GUI, retired deliberately once the interface became the bottleneck.</div></div>
       <div class="entry"><div class="when">Early 2026</div><div class="what"><b>Platform rebuild.</b> Moved to a web platform under a production process manager, with a dynamic module registry for hot-detected hardware.</div></div>
       <div class="entry"><div class="when">Feb–Mar 2026</div><div class="what"><b>AI core matures.</b> Persistent memory made multi-worker-safe, live system state composed at call time, a full sensor mosaic replacing the camera-only view.</div></div>
